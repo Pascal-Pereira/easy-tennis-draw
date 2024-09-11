@@ -1,0 +1,112 @@
+{
+  "usableSessionsCount": 2,
+  "retiredSessionsCount": 0,
+  "sessions": [
+    {
+      "id": "session_XAUboHmJq1",
+      "cookieJar": {
+        "version": "tough-cookie@4.1.4",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-09-12T00:11:05.155Z",
+      "createdAt": "2024-09-11T23:21:05.154Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_Ncj2DpDeq5",
+      "cookieJar": {
+        "version": "tough-cookie@4.1.4",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": [
+          {
+            "key": "__cf_bm",
+            "value": "toB7B2GvMuBKJjPcgfPgmAzmTvBAAfkA4VUgF7JqOtU-1726096867-1.0.1.1-y4k6D3DpVCwDUaUPrUGBK3H98t7IixXGoRr3C1knMb83Som16r9LYGrh88Yu3oI4x_gVCB3S9hhwO8vXoCOWfg",
+            "expires": "2024-09-11T23:51:07.101Z",
+            "domain": "atptour.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": false,
+            "creation": "2024-09-11T23:21:24.850Z",
+            "lastAccessed": "2024-09-11T23:21:24.850Z"
+          },
+          {
+            "key": "_gcl_au",
+            "value": "1.1.1537348240.1726096869",
+            "expires": "2024-12-10T23:21:08.000Z",
+            "domain": "atptour.com",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-11T23:21:24.896Z",
+            "lastAccessed": "2024-09-11T23:21:24.896Z"
+          },
+          {
+            "key": "_ga_D7VPPXYD0V",
+            "value": "GS1.1.1726096873.1.0.1726096873.60.0.0",
+            "expires": "2025-10-16T23:21:13.323Z",
+            "domain": "atptour.com",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-11T23:21:24.909Z",
+            "lastAccessed": "2024-09-11T23:21:24.909Z"
+          },
+          {
+            "key": "_ga",
+            "value": "GA1.1.332182736.1726096873",
+            "expires": "2025-10-16T23:21:13.325Z",
+            "domain": "atptour.com",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-09-11T23:21:24.915Z",
+            "lastAccessed": "2024-09-11T23:21:24.915Z"
+          },
+          {
+            "key": "__eoi",
+            "value": "ID=9ecdea9107083cc1:T=1726096871:RT=1726096871:S=AA-AfjaGf_smPElZCoeVHj39OX3F",
+            "expires": "2025-03-10T23:21:11.000Z",
+            "domain": "atptour.com",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2024-09-11T23:21:24.921Z",
+            "lastAccessed": "2024-09-11T23:21:24.921Z"
+          },
+          {
+            "key": "cf_clearance",
+            "value": "CuEAgQKi4qR2CBU3_cVCvuv3CXTotXmJiGWmRpgRQoM-1726096877-1.2.1.1-zkIh5W6oTRQoH5eTAjbdHqxSvzda1vQz08OlHrxf3LGi4ZIol9NNdTyK_dmyabq585UwK8CbxCCEmKnONHkI0xmAHA7jgDJcjYkm1n17iRiHOJ5FGPsv6XuhCckvuFg6VtbmJwr4LU0AzgToGcoxGwlRQI67HYgdd0IgpOzNaFxoR.t2Mz6PT1zBnbYolhF8Eur84JZW92LVPsep9gt8jQ27Gj5_WOePMV26TCyWaZydVTTzl_BrxGIBtSvh0UAC1uNzWaMnIzEJT5ANtsz6L9..H8KiM_0AYsMAu_1awgOjcsxfnFRuAKVOA9zvOTBU31MFAJPjGJXBCH7vjAVCv92IjdttzR_Y6tjvhQvXXj7Q86jhOIQem1uXfd8o88gP",
+            "expires": "2025-09-11T23:21:17.054Z",
+            "domain": "atptour.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": false,
+            "creation": "2024-09-11T23:21:24.928Z",
+            "lastAccessed": "2024-09-11T23:21:24.928Z"
+          }
+        ]
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-09-12T00:11:05.173Z",
+      "createdAt": "2024-09-11T23:21:05.173Z",
+      "usageCount": 2,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    }
+  ]
+}

@@ -1260,3 +1260,17 @@
   background-color: #f0f8ff; /* Highlight color for selected players */
   transition: background-color 0.3s ease;
 }
+
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.arrow--right {
+  color: green;
+}
+
+.arrow--left {
+  color: red;
+}

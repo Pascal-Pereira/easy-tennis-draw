@@ -1,0 +1,9 @@
+{
+	"id": "Z7WwlN3sBVHzPq4",
+	"json": "{\"id\":\"Z7WwlN3sBVHzPq4\",\"url\":\"https://www.atptour.com/en/tournaments\",\"loadedUrl\":\"https://www.atptour.com/en/tournaments\",\"uniqueKey\":\"https://www.atptour.com/en/tournaments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2024-09-11T23:21:25.855Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.atptour.com/en/tournaments",
+	"url": "https://www.atptour.com/en/tournaments"
+}
