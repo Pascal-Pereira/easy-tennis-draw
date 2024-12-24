@@ -1,0 +1,71 @@
+{
+  "usableSessionsCount": 2,
+  "retiredSessionsCount": 0,
+  "sessions": [
+    {
+      "id": "session_uibtwQQlgb",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-24T16:36:12.665Z",
+      "createdAt": "2024-12-24T15:46:12.665Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_jlJEu3ZEvo",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": [
+          {
+            "key": "__cf_bm",
+            "value": "F_nI2cNq0dbMDjRLXofQ0zrJ8af.4fHy5b2oKHS8uoM-1735055177-1.0.1.1-A0cR1hgPYcJEs5_HNkIltX9hkkUlGusP3CetvUDVCdnW2BJLX_jOe9wfwJIwmLNcBllh.HjGdum9CfzyYTosKA",
+            "expires": "2024-12-24T16:16:18.059Z",
+            "domain": "oscaro.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": false,
+            "creation": "2024-12-24T15:46:19.297Z",
+            "lastAccessed": "2024-12-24T15:46:19.297Z"
+          },
+          {
+            "key": "_cfuvid",
+            "value": "eLrwr31u41yCGjxZkX.Xq.4hnPzzkULHLSUxc58YiqM-1735055177959-0.0.1.1-604800000",
+            "expires": "2024-12-24T16:36:19.291Z",
+            "domain": "oscaro.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true,
+            "hostOnly": false,
+            "creation": "2024-12-24T15:46:19.317Z",
+            "lastAccessed": "2024-12-24T15:46:19.317Z"
+          }
+        ]
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-24T16:36:12.689Z",
+      "createdAt": "2024-12-24T15:46:12.689Z",
+      "usageCount": 2,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+	"id": "RdMP40OgrZKekyl",
+	"json": "{\"id\":\"RdMP40OgrZKekyl\",\"url\":\"https://www.oscaro.com/\",\"loadedUrl\":\"https://www.oscaro.com/\",\"uniqueKey\":\"https://www.oscaro.com\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2024-12-24T15:46:26.219Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.oscaro.com",
+	"url": "https://www.oscaro.com/"
+}
