@@ -1,0 +1,71 @@
+name: Tennis Draw Automation
+
+on:
+  issues:
+    types: [labeled]
+  pull_request:
+    types: [labeled]
+  issue_comment:
+    types: [created]
+
+jobs:
+  update-draw:
+    if: github.event_name == 'issues' && github.event.label.name == 'tennis-draw'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+      pull-requests: write
+
+    steps:
+      # 1️⃣ Check out the repo
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      # 2️⃣ Install dependencies
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      # 3️⃣ Create branch for this issue
+      - name: Create branch
+        run: |
+          ISSUE_NUMBER=${{ github.event.issue.number }}
+          BRANCH="draw/issue-$ISSUE_NUMBER"
+          git fetch origin "$BRANCH" || true
+          if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+            git checkout -B "$BRANCH" "origin/$BRANCH"
+            git pull --rebase origin "$BRANCH"
+          else
+            git checkout -b "$BRANCH"
+          fi
+
+      # 4️⃣ Run your tennis draw script
+      - name: Run Tennis Draw Script
+        run: |
+          node scripts/draw.js --issue ${{ github.event.issue.number }}
+
+      # 5️⃣ Commit and push changes
+      - name: Commit and Push
+        run: |
+          git config --global user.name "tennis-bot"
+          git config --global user.email "bot@tennis.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "feat: update tennis draw for issue #${{ github.event.issue.number }}"
+            git push origin HEAD
+          else
+            echo "No changes to commit"
+
+      # 6️⃣ Create a PR automatically
+      - name: Create PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          gh pr create \
+            --title "feat: Tennis Draw #${ISSUE_NUMBER}: ${{ github.event.issue.title }}" \
+            --body "Auto-generated draw update for issue #${ISSUE_NUMBER}" \
+            --head "draw/issue-${ISSUE_NUMBER}" \
+            --base "develop"
