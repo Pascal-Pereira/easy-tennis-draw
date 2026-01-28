@@ -25,7 +25,9 @@ jobs:
 
       # 2️⃣ Install dependencies
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          cd frontend && yarn install --frozen-lockfile
+          cd ../backend && yarn install --frozen-lockfile
 
       # 3️⃣ Create branch for this issue
       - name: Create branch
@@ -40,10 +42,24 @@ jobs:
             git checkout -b "$BRANCH"
           fi
 
-      # 4️⃣ Run your tennis draw script
-      - name: Run Tennis Draw Script
-        run: |
-          node scripts/draw.js --issue ${{ github.event.issue.number }}
+      # 4️⃣ Run Codex to update the draw
+      - name: Run Codex
+        uses: enyosolutions/codex-action@v0.1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          codex-auth-json-b64: ${{ secrets.CODEX_AUTH_JSON_B64 }}
+          sandbox: workspace-write
+          model: gpt-5.2-codex
+          prompt: |
+            Issue #${{ github.event.issue.number }}: ${{ github.event.issue.title }}
+
+            ${{ github.event.issue.body }}
+
+            Repo: tennis-draw-app
+            Task: Update the tennis draw for 128 players (7 rounds). 
+            Maintain selection/deselection logic and green/red arrows. 
+            Update frontend (Vue3) and backend (Node.js) files as needed.
+            Write minimal, complete changes and unit tests if relevant.
 
       # 5️⃣ Commit and push changes
       - name: Commit and Push
